@@ -1,0 +1,63 @@
+.app-container {
+  height: 100vh;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.custom-input::placeholder {
+  font-size: 16px;
+}
+
+
+
+.matrix-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.quadrant {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Add specific styling for each quadrant if needed */
+.urgentImportant { background-color: #ffd700; }
+.notUrgentImportant { background-color: #98fb98; }
+.urgentNotImportant { background-color: #ffb6c1; }
+.notUrgentNotImportant { background-color: #add8e6; }
+
+/* Style for the buttons */
+button {
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.add-button {
+  background-color: green;
+  color: white;
+  margin-left: 4px;
+}
+
+.update-button {
+  background-color: blue;
+  color: white;
+  margin-left: 4px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  margin-left: 4px;
+}
+
